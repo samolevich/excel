@@ -6,7 +6,8 @@
     "node": true
   },
   "rules": {
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "object-curly-spacing": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
