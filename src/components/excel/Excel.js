@@ -4,8 +4,13 @@ export class Excel {
     this.components = options.components || [];
   }
 
+  getRoot() {
+    const $root = document.createElement('div');
+    $root.textContent = 'test';
+    return $root;
+  }
+
   render() {
-    console.log(this.$el);
-    this.$el.insertAdjacentHTML('afterbegin', '<h1>Test</h1>');
+    this.$el.append(this.getRoot());
   }
 }
