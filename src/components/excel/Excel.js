@@ -6,7 +6,10 @@ export class Excel {
 
   getRoot() {
     const $root = document.createElement('div');
-    $root.textContent = 'test';
+    this.components.forEach((Component) => {
+      const component = new Component();
+      console.log(component);
+    });
     return $root;
   }
 
