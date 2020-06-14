@@ -5,6 +5,7 @@
 @import "toolbar";
 @import "formula";
 @import "table";
+@import "dashboard";
 
 * {
   margin: 0;
@@ -15,4 +16,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+}
+
+.excel {
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: 18px;
 }
